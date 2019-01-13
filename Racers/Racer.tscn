@@ -31,10 +31,9 @@ script = ExtResource( 1 )
 transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0.413691, 0 )
 texture = ExtResource( 2 )
 hframes = 2
-frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-playback_speed = 50.0
+playback_speed = 3.0
 anims/go = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
