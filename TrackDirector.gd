@@ -1,9 +1,9 @@
 extends Spatial
-var Track = preload("res://Environment/Track/Track.tscn");
+var Track = preload("res://Environment/Prefabs/Straight Track.tscn");
 
 var loaded = Vector3();
 var focus = Vector3();
-export var LoadDistance = 100;
+export var LoadDistance = 150;
 
 func set_focus(new_focus):
 	focus = new_focus;
@@ -11,7 +11,7 @@ func set_focus(new_focus):
 func load_track():
 	var t = Track.instance();
 	t.translation = loaded;
-	loaded += Vector3(0, 0, 20)
+	loaded += Vector3(0, 0, 50)
 	add_child(t);
 
 func _process(_detla):

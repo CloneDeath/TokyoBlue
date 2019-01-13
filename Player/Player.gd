@@ -8,6 +8,8 @@ func _physics_process(delta):
 	velocity.z += THRUST * delta;
 	if (velocity.z > maxSpeed): velocity.z = maxSpeed;
 	UpdateInput();
+	if (!is_on_floor()):
+		velocity.y -= 9.8 * delta;
 	velocity = self.move_and_slide(velocity, Vector3(0, 1, 0), false, 100, 0.785398, false);
 
 
