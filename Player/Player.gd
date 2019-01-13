@@ -2,10 +2,11 @@ extends KinematicBody
 
 var THRUST = 10;
 var velocity = Vector3();
+var maxSpeed = (1000.0 / 60 / 60) * 1000;
 
 func _physics_process(delta):
 	velocity.z += THRUST * delta;
-	if (velocity.z > 1000): velocity.z = 1000;
+	if (velocity.z > maxSpeed): velocity.z = maxSpeed;
 	UpdateInput();
 	velocity = self.move_and_slide(velocity);
 
