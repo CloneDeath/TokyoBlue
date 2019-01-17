@@ -5,6 +5,6 @@ export(NodePath) var player;
 func get_player():
 	return get_node(player);
 
-func _process(delta):
+func _process(_delta):
 	var velocity = get_player().velocity.z;
 	$SpeedValue.text = str(velocity * 60 * 60 / 1000) + " kph";
