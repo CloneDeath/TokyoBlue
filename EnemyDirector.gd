@@ -18,7 +18,7 @@ func add_enemy():
 	add_child(racer);
 
 func _process(delta):
-	var x = rand_range(0, 0.1);
+	var x = rand_range(0, 0.2);
 	if (x <= delta):
 		add_enemy();
 	cull_passed_children();
