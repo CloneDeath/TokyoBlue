@@ -1,0 +1,19 @@
+# Made using Asset Forge (1.3)
+
+:models
+Aircraft/ship_frontEdge[(0, 0, -1);(0.0, 0.0, 0.0);(1.0, 1.0, 1.0);ship_frontEdge_0;blueSteel+_defaultMat]
+Aircraft/ship_hull[(0, 0, 0);(0.0, 0.0, 0.0);(1.0, 1.0, 1.0);ship_hull_1;blueSteel+_defaultMat]
+Aircraft/plane_rudder[(0.5, 0.1, 0.3);(0.0, 0.0, 0.0);(1.0, 1.0, 1.0);plane_rudder_5;_defaultMat]
+Aircraft/plane_rudder[(-0.5, 0.1, 0.3);(0.0, 0.0, 0.0);(-1.0, 1.0, 1.0);plane_rudder_6;_defaultMat]
+Aircraft/glass_low[(0, 0.5, -0.2);(0.0, 0.0, 0.0);(1.0, 1.0, 1.0);glass_low_7;glass]
+Aircraft/detail_windowLarge[(0.2, -0.2, 1);(0.0, 270.0, 0.0);(1.0, 0.9, 1.0);detail_windowLarge_8;_defaultMat+glass]
+Aircraft/detail_windowLarge[(-0.2, -0.2, 1);(0.0, 270.0, 0.0);(1.0, 0.9, 1.0);detail_windowLarge_9;_defaultMat+glass]
+
+:materials
+blueSteel[RGBA(0.141, 0.565, 0.831, 1.000);]
+_defaultMat[RGBA(1.000, 1.000, 1.000, 1.000);]
+glass[RGBA(0.298, 0.314, 0.365, 1.000);]
+
+:textures
+
+:extra
