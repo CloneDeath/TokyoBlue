@@ -22,7 +22,7 @@ LoadDistance = 600
 
 [node name="EnemyDirector" parent="." instance=ExtResource( 4 )]
 playerPath = NodePath("../Player")
-LoadDistance = 300
+LoadDistance = 200
 
 [node name="Gui" parent="." instance=ExtResource( 5 )]
 player = NodePath("../Player")
