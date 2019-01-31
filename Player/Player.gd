@@ -1,7 +1,7 @@
 extends KinematicBody
 
 export var velocity = Vector3();
-var THRUST = 10;
+var THRUST = 5;
 var maxSpeed = (1000.0 / 60 / 60) * 1000;
 
 func _physics_process(delta):
@@ -9,7 +9,6 @@ func _physics_process(delta):
 	UpdateInput();
 	UpdateGravity(delta);
 
-	#velocity = self.move_and_slide(velocity, Vector3(0, 1, 0), false, 100, 0.785398, false);
 	var collision = move_and_collide(velocity * delta)
 	if collision:
 		if collision.collider.has_method("hit"):
@@ -30,3 +29,4 @@ func UpdateInput():
 	var LEFT = Input.is_action_pressed("move_left");
 	var RIGHT = Input.is_action_pressed("move_right");
 	velocity.x = (int(LEFT) - int(RIGHT)) * 10;
+	$VehicleMesh.rotation.z = velocity.x * .01;

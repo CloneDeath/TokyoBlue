@@ -15,11 +15,14 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.202147, 0 )
 [node name="Camera" type="Camera" parent="Player"]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 2, -4 )
 current = true
+far = 600.0
 
 [node name="TrackDirector" parent="." instance=ExtResource( 3 )]
+LoadDistance = 600
 
 [node name="EnemyDirector" parent="." instance=ExtResource( 4 )]
 playerPath = NodePath("../Player")
+LoadDistance = 300
 
 [node name="Gui" parent="." instance=ExtResource( 5 )]
 player = NodePath("../Player")
